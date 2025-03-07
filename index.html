@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content"width=device-width, initial-scale=1" />
+	<style>
+		body,
+		html {
+			padding: 0;
+			margin: 0;
+			background-color: black;
+		}
+
+		@keyframes thefuture {
+			0% {
+				color: blue;
+			}
+
+			25% {
+				color: greenyellow;
+			}
+
+			50% {
+				color: white;
+
+			}
+
+			100% {
+
+				color: blue;
+
+			}
+		}
+
+		marquee {
+			color: greenyellow;
+			animation-name: thefuture;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+		}
+
+		label {
+			color: white;
+			font-family: monospace;
+			font-variant-caps: all-petite-caps;
+		}
+
+		input {
+			color: violet;
+			background-color: unset;
+			border: none;
+			border-bottom: solid 2px white;
+
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<marquee>Rouge Thing Game</marquee>
+	</header>
+	<label>
+		Seed
+		<input />
+	</label>
+</body>
+
+</html>
