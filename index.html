@@ -52,6 +52,48 @@
 			border-bottom: solid 2px white;
 
 		}
+
+		button {
+			background-color: navajowhite;
+			font-weight: bold;
+			padding: 10px 20px;
+			border: dashed 5px cadetblue;
+			border-radius: 25%;
+			cursor: pointer;
+		}
+
+		button:hover {
+			animation-name: clickyclikcy;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes clickyclikcy {
+			0% {
+				background-color: navajowhite;
+				color: blue;
+			}
+
+			25% {
+
+				background-color: paleturquoise;
+				color: greenyellow;
+			}
+
+			50% {
+
+				background-color: teal;
+				color: white;
+
+			}
+
+			100% {
+
+				background-color: burlywood;
+				color: blue;
+
+			}
+		}
 	</style>
 </head>
 
@@ -63,6 +105,8 @@
 		Seed
 		<input />
 	</label>
+	<button id="startGameButton"
+		onclick="localStorage.setItem('seed',document.querySelector('input').value); window.location='menu.html';">Begin</button>
 </body>
 
 </html>
